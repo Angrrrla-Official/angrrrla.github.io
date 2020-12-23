@@ -1,7 +1,20 @@
 .block {
+    margin-left: auto;
+    margin-right: auto;
     display: flex; /* required */
     align-items: center;
     flex-flow: row nowrap; /* required */
+}
+
+@media screen and (min-width: 1280px) {
+    .block {
+        max-width:80%;
+    }
+}
+@media screen and (min-width: 1680px) {
+    .block {
+        max-width:70%;
+    }
 }
 .block .background, .block .foreground {
     box-sizing: border-box; /* required */
