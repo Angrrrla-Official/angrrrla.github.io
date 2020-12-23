@@ -1,0 +1,35 @@
+.block {
+    display: flex; /* required */
+    align-items: center;
+    flex-flow: row nowrap; /* required */
+}
+.block .background, .block .foreground {
+    box-sizing: border-box; /* required */
+    width: 100%; /* required */
+    flex: none; /* required */
+}
+.block .background {
+    height: 100%;
+    padding: 15px;
+    font-size: 30px;
+}
+.block .foreground {
+    vertical-align: middle;
+    padding: 15px;
+    margin-left: -100%; /* required */
+}
+.block .foreground .outside {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+.banner{
+    max-width:100%;
+    object-fit: contain;
+}
+.me {
+    width: 40%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}

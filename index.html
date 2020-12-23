@@ -1,12 +1,55 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-<title>Angrrrla</title>
-</head>
-<body>
+	<head>
+		<title>Angrrrla</title>
+		<meta charset="utf-8" />
 
-<h1>Hello World!</h1>
-<p>Content coming soon...</p>
+		<meta name="og:title" content="Angrrrla">
+		<meta name="og:description" content="Official website for Angrrrla TTV.">
+		<meta name="og:image" content="https://angrrrla.ca/assets/img/me.png">
+		<meta name="og:url" content="https://angrrrla.ca">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="og:site_name" content="Angrrrla">
+		<meta name="twitter:image:alt" content="Angrrrla">
 
-</body>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+				<header id="header">
+                    <h1 style="color:black; font-family: Verdana, sans-serif;">Angrrrla</h1>
+                    <div class="block">
+                        <div class="background">
+                            <img class="banner" src="assets/img/banner_transparent.png" alt="banner">
+                        </div>
+                        <div class="foreground">
+                            <div>
+                                <img class="me" src="assets/img/me.png" alt="banner">
+                            </div>
+                        </div>
+                    </div>
+					<nav>
+						<ul>
+							<li><a href="http://twitter.angrrrla.ca" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="http://discord.angrrrla.ca" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+							<li><a href="http://steam.angrrrla.ca" class="icon brands fa-steam"><span class="label">Steam</span></a></li>
+							<li><a href="http://twitch.angrrrla.ca" class="icon brands fa-twitch"><span class="label">Twitch</span></a></li>
+							<!-- <li><a href="http://youtube.angrrrla.ca" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li> -->
+						</ul>
+					</nav>
+				</header>
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
