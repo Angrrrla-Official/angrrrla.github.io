@@ -208,11 +208,7 @@ input, select, textarea {
 
 	#bg {
 		/* background: url("../img/bg.jpg"); */
-		background: rgb(2,0,36);
-		background: -moz-linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(187,227,45,1) 64%);
-		background: -webkit-linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(187,227,45,1) 64%);
-		background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(187,227,45,1) 64%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#bbe32d",GradientType=1);
+		background: rgba(187,227,45,1);
 		height: 100%;
 
 	  /* Center and scale the image nicely */

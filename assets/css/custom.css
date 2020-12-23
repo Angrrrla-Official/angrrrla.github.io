@@ -1,21 +1,26 @@
+@font-face {
+    font-family: AbelRegular;
+    src: url(../webfonts/Abel-Regular.ttf)
+}
+.title {
+    box-sizing: border-box; /* required */
+}
+.title-img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width:50%;
+    object-fit: contain;
+}
+
 .block {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
     display: flex; /* required */
     align-items: center;
     flex-flow: row nowrap; /* required */
 }
 
-@media screen and (min-width: 1280px) {
-    .block {
-        max-width:80%;
-    }
-}
-@media screen and (min-width: 1680px) {
-    .block {
-        max-width:70%;
-    }
-}
 .block .background, .block .foreground {
     box-sizing: border-box; /* required */
     width: 100%; /* required */
@@ -24,7 +29,6 @@
 .block .background {
     height: 100%;
     padding: 15px;
-    font-size: 30px;
 }
 .block .foreground {
     vertical-align: middle;
@@ -41,7 +45,7 @@
     object-fit: contain;
 }
 .me {
-    width: 40%;
+    width: 20%;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
